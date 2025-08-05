@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="Practica 4" content="MDIGITAL Practica 4"/>
+    <meta name="robots" content="nofollow"/>
+    <meta name="Author" content="MDIGITAL_STUDENT"/>
+    <meta name="keywords" content="MDIGITAL, Practica 4, Prueba de CSS"/>
+    <meta name="lang" content="es"/>
+    <meta name="category" content="Practicas"/>
+    <link rel="stylesheet" href="registro.css"/>
+    <title>Practica 4 - MDIGITAL</title>
+</head>
+
+<body>
+    <div id="Menu_Principal">
+        <h1>MDIGITAL PRACTICA 4</h1>
+    </div>
+    <header class="border"><!-- Menu -->
+        <nav>
+            <div class="div-menu">
+                <div class="boton">
+                    <a href="indice.html" class="div-menu">Indice</a>
+                </div>
+                <div class="boton">
+                    <a href="noticias.html" class="div-menu">Noticias</a>
+                </div>
+                <div class="boton">
+                    <a href="enlaces.html" class="div-menu">Enlace</a>
+                </div>
+                <div class="boton">
+                    <a href="galeria.html" class="div-menu">Galeria</a>
+                </div>
+                <div class="boton">
+                    <a href="registro.html" class="div-menu">Registro</a>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- Fin del Menu -->
+
+    <section class="border">
+        <article> <!-- Articulo Principal -->
+            <header>
+                <div class="titles"><h1>Formulario de Inscripción</h1></div>
+            </header>
+            <div id="Imagen_Arriba">
+                <img src="https://images.squarespace-cdn.com/content/v1/63dde481bbabc6724d988548/c446df3a-6867-4437-ae1f-a96d1a25253e/_a1d8069b-7279-49d7-b72f-052d985c935b.jpg" alt="Vintage"/>
+            </div>
+        </article>
+        <article>
+            <header>
+                <div class="titles"><h1>Rellena los siguientes campos :</h1></div>
+            </header>
+            <br>
+            <div class="Registro">
+                <div class="fila">
+                    <label for="nombre">Nombre :</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre   (requerido)" required>
+                </div>
+                <div class="fila">
+                    <label for="direccion">Dirección :</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Dirección   (requerido)" required>
+                </div>
+                <div class="fila">
+                    <label for="telefono">Telefono :</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Telefono   (requerido)" required>
+                </div>
+                <div class="fila">
+                    <label for="edad">Edad :</label>
+                    <input type="number" name="edad" id="edad" placeholder="Edad   (requerido)" required>
+                </div>
+                <div class="fila">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Email   (requerido)" required>
+                </div>
+            </div>
+            <br>
+                <div class="botones">
+                    <button type="submit" class="submit_button">Enviar formulario</button>
+                    <button type="reset" class="reset_button">Borrar formulario</button>
+                </div>
+        </article> <!-- Datos Interesantes -->
+    </section>
+
+    <footer class="border">
+        <p>:: masterD :: Practicas HTML y CSS :: Todos los derechos reservados :: </p>
+    </footer>
+</body>
+</html>

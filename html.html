@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Layouts</title>
+
+        <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Estilos de la cabecera */
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    
+    /* Estilo de la lista */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Contenedor para flexboxes */
+    #section2 {
+        display: -webkit-flex;
+        display: flex;
+    }
+    /* Estilo de la lista */
+    #nav2 {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+    }
+    /* Contenido */
+    #article2 {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+
+    /* Creamos las dos columnas que floten una al lado de la otra */
+    #nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+    }
+
+    /* Estilos del article, con float */
+    #article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+    }
+
+    /* Usamos un Clear después del section */
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Pies */
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    
+
+
+</style>
+    </head>
+    <body>
+        <header>
+            <h1>Header/Cabecera</h1>
+        </header>
+        <section id="section">
+            <h2>Sección 1</h2>
+            <nav id="nav">
+                <ul>
+                    <li>Section y Nav</li>
+                    <li><a href="#">Elemento Lista 1</a></li>
+                    <li><a href="#">Elemento Lista 2</a></li>
+                    <li><a href="#">Elemento Lista 3</a></li>
+                </ul>
+            </nav>
+            <article id="article">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam interdum ipsum sit amet nibh commodo, ut venenatis quam
+                    condimentum. Suspendisse bibendum lacus imperdiet, viverra erat eu,
+                    iaculis diam..</p>
+            </article>
+        </section>
+        <footer>
+            <p>Footer/Pies de p&aacute;gina</p>
+        </footer>
+
+        <div class="flex-contenedor">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>    
+        </div>
+
+        <br>
+
+        <section id="section2">
+            <h2>Sección 1</h2>
+            <nav id="nav2">
+                <ul>
+                    <li>Section y Nav</li>
+                    <li><a href="#">Elemento Lista 1</a></li>
+                    <li><a href="#">Elemento Lista 2</a></li>
+                    <li><a href="#">Elemento Lista 3</a></li>
+                </ul>
+            </nav>
+            <article id="article2">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam interdum ipsum sit amet nibh commodo, ut venenatis quam
+                    condimentum. Suspendisse bibendum lacus imperdiet, viverra erat eu,
+                    iaculis diam..</p>
+            </article>
+        </section>
+
+    </body>
+</html>
